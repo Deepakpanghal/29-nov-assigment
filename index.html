@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KBC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+       
+        
+        <script>
+
+            let prizeMoney = 0;
+                let level = 0;
+
+                    let questions = [
+                        {
+                            question: "Which language is used for Forntend \n(a)Ruby \n(b)Javaascript \n(c)Python \n(d)c++",
+                            answer: "b"
+                        },
+                        {
+                            question: "Which is the frontend Frame work \n(a)ANGULAR  \n(b)React    \n(c)Node \n(d)Larvel",
+                            answer: "a"
+                        },
+                    ];
+                            for (let i = 0; i < questions.length; i++) {
+                                let output = prompt(questions[i].question);
+
+                                if (output == questions[i].answer) {
+                                    alert("Your answer is correct (Click ok) for next level");
+                                    prizeMoney += 1000;
+                                    level++;
+                                } 
+                                else {
+                                    alert("Wrong answer");
+                                break;
+                                }
+                            }
+                            alert( "You won" + prizeMoney );
+        </script>
+    </body>
+</html>
